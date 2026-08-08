@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header p {
+    color: #cbd5e1;
+    margin-top: 4px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.status span {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.controls {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    background: white;
+}
+
+.controls input,
+.controls select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.controls input {
+    flex: 1;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 150px);
+}
+
+#map {
+    flex: 1;
+    min-height: 500px;
+}
+
+aside {
+    width: 330px;
+    background: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+aside h2 {
+    margin-bottom: 15px;
+}
+
+.bus-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.bus-card:hover {
+    background: #f9fafb;
+}
+
+.bus-number {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bus-route {
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.bus-status {
+    margin-top: 8px;
+    color: #16a34a;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111827;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #map {
+        height: 55vh;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 19px;
+    }
+}
