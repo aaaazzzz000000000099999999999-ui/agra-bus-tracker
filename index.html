@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agra Bus Tracker</title>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>🚌 Agra Bus Tracker</h1>
+        <p>Live public transport tracking</p>
+    </div>
+
+    <div class="status">
+        <span></span> LIVE
+    </div>
+</header>
+
+<div class="controls">
+
+    <input
+        id="search"
+        type="text"
+        placeholder="Search bus number..."
+    >
+
+    <select id="routeFilter">
+
+        <option value="all">
+            All Routes
+        </option>
+
+        <option value="Agra Cantt - ISBT">
+            Agra Cantt - ISBT
+        </option>
+
+        <option value="Sikandra - Agra Cantt">
+            Sikandra - Agra Cantt
+        </option>
+
+        <option value="Taj Mahal - ISBT">
+            Taj Mahal - ISBT
+        </option>
+
+    </select>
+
+</div>
+
+<main>
+
+    <div id="map"></div>
+
+    <aside>
+
+        <h2>Live Buses</h2>
+
+        <div id="busList"></div>
+
+    </aside>
+
+</main>
+
+<footer>
+    Agra Bus Tracker
+</footer>
+
+
+<script
+src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
